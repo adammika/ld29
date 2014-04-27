@@ -18,12 +18,7 @@ public class GameOverScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown("space")) {
-			Color fadeColor = new Color();
-			fadeColor.r = 27 / 255.0f;
-			fadeColor.g = 38 / 255.0f;
-			fadeColor.b = 50 / 255.0f;
-			fadeColor.a = 1.0f;
-			AutoFade.LoadLevel("Title", 1.0f, 1.0f, fadeColor);
+			Application.LoadLevel("Title");
 		}
 	}
 
